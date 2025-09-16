@@ -298,3 +298,24 @@ body {
 .top-fv__btnArea {
 	margin-top: 38px;
 }
+
+/*  top-movie
+=========================== */
+.top-movie {
+	width: 100%;
+	padding: 160px 0;
+}
+
+.content-inner {
+	padding: 0 24px;
+}
+
+.top-movie__videoArea {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.top-movie__video {
+	max-width: 1000px;
+	height: auto;
+}
