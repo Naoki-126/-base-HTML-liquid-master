@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* ===========================
+#  レスポンシブ対応
+=========================== */
+@media screen and (max-width: 768px) {
+
+  /* common
+  =========================== */
+  .content-inner {
+	padding: 0 16px;
+  }
+
+  /* header
+  =========================== */
+  .header-area {
+    height: 80px;
+  }
+
+  .header-cart {
+    width: 80px;
+  }
+
+  .header-upper {
+    display: none;
+  }
+
+  .header-upper__ttlArea {
+    display: none;
+  }
+
+  .header-upper__menuArea {
+    display: none;
+  }
+
+  .header-lower {
+    border-top: .5px solid transparent;
+    flex-direction: column;
+  }
+
+  .header-lower__navArea {
+    display:none;
+  }
+
+  .drawer-icon {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    width: 36px;
+    height: 30px;
+    padding: 6px;
+    cursor: pointer;
+  }
+
+  .drawer-icon__bar {
+    display: block;
+    height: 3px;
+    background: var(--color-primary);
+    margin: 4px 0;
+    border-radius: 2px;
+  }
+
+  /* footer
+  =========================== */
+  .footer-up {
+    padding: 40px 16px;
+  }
+
+  .footer-up__wrap {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-logo {
+    width: 75%;
+  }
+
+  .footer-low__wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* top-fv
+  =========================== */
+  .top-fv__img {
+    aspect-ratio: 4 / 5;
+    min-height: 60vh;
+  }
+
+  .top-fv__txtArea {
+    top: 42%;
+    left: 20%;
+  }
+
+  .top-fv__logo {
+    width: 75%;
+  }
+
+  .top-fv__text {
+    margin-top: 20px;
+  }
+
+  /*  top-movie
+  =========================== */
+  .top-movie {
+    padding-top: 60px;
+  }
+
+  /* top-about 
+  =========================== */
+
+}
+
+/* ===========================
+#  ドロワー
+=========================== */
+.drawer-contents {
+  width: 240px;
+	height: auto;
+	background: #D5D5D5;
+	border: 1px solid  #292929;
+	border-radius: 12px;
+	position: fixed;
+	top: 72px;
+	left: 16px;
+	z-index: 50;
+	transform: translateX(-110%);
+	transition: transform 0.3s linear;
+}
+
+.drawer-contents.is-checked {
+	transform: translateX(0);
+}

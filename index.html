@@ -6,6 +6,7 @@
   <title>リキマス最終課題</title>
   <link rel="stylesheet" href="./assets/reset.css">
   <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/style-sp.css">
   <script src="./assets/script.js" defer></script>
 </head>
 <body>
@@ -26,16 +27,23 @@
           </nav>
         </div>
         <div class="header-lower">
+          <button id="js-drawer" class="header-hamburger drawer-icon">
+            <span class="drawer-icon__bar"></span>
+            <span class="drawer-icon__bar"></span>
+            <span class="drawer-icon__bar"></span>
+          </button>
           <a href="" class="header-lower__logoArea">
             <h1><img src="./assets/logo.png" alt="logo" class="header-lower__logo"></h1>
             <h3 class="header-lower__subttl">KAKUUBRAND</h3>
           </a>
-          <nav>
+          <nav class="header-lower__navArea">
             <ul class="header-lower__menuArea">
               <li><a href="" class="header-lower__menu">商品一覧</a></li>
               <li><a href="" class="header-lower__menu">商品カテゴリー</a></li>
               <li><a href="" class="header-lower__menu">ブランド</a></li>
               <li><a href="" class="header-lower__menu">お問合せ</a></li>
+            </ul>
+            <ul class="header-lower__manu2Area">
               <li><img src="./assets/search.png" alt="search" class="header-lower__search"></li>
               <li><img src="./assets/smile.png" alt="smile" class="header-lower__smile"></li>
               <li><img src="./assets/heart.png" alt="heart" class="header-lower__heart"></li>
@@ -48,12 +56,27 @@
       </div>
     </div>
   </header>
+  <div id="js-drawer__contents" class="drawer-contents">
+    <nav class="drawer-content">
+      <a href="" class="drawer-content__link">会社概要</a>
+      <a href="" class="drawer-content__link">お知らせ</a>
+      <a href="" class="drawer-content__linkPlus">FAQ</a>
+      <a href="" class="drawer-content__linkPlus">商品一覧</a>
+      <a href="" class="drawer-content__link">商品カテゴリー</a>
+      <a href="" class="drawer-content__link">ブランド</a>
+      <a href="" class="drawer-content__link">お問い合わせ</a>
+      <a href="" class="drawer-content__link">日本語</a>
+      <a href="" class="drawer-content__link"></a>
+      <a href="" class="drawer-content__link"></a>
+      <a href="" class="drawer-content__link"></a>
+    </nav>
+  </div>
   <main>
   <section class="top-fv">
     <div class="page-inner">
       <div class="top-fv__area">
         <img src="./assets/mv-1.png" alt="mv-1" class="top-fv__img">
-        <div class="top-fv__tetArea">
+        <div class="top-fv__txtArea">
           <h2 class="top-fv__logoArea"><img src="./assets/logo_kumataro.png" alt="kumataro" class="top-fv__logo"></h2>
           <p class="top-fv__text">Kumataroも架空ブランドです。<br>話しかけるとお喋りする奇妙な<br>ぬいぐるみです。</p>
           <div class="top-fv__btnArea">
@@ -66,10 +89,43 @@
   <section class="top-movie">
     <div class="page-inner content-inner">
       <div class="top-movie__videoArea">
-        <iframe width="1000" height="500" src="https://www.youtube.com/embed/XXXXXXXX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="to0-movie__video"></iframe>
+        <iframe width="1000" height="500"  src="https://www.youtube.com/embed/XXXXXXXX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="top-movie__video"></iframe>
       </div>
     </div>
   </section>
+  <section class="top-about">
+    <div class="pageinner content-inner">
+      <div class="top-about__contents">
+        <div class="top-about__imgArea">
+          <img src="./assets/about-img1.png" alt="" class="top-about__img">
+        </div>
+        <div class="top-about__txtArea">
+          <div class="c-ttlArea">
+            <h2 class="c-title">ABOUT</h2>
+            <p class="c-subTitle">私たちについて</p>
+          </div>
+            <div class="top-about-text">
+              <p class="c-text">BABY PUPO(ベイビープポ)は架空のベビー用品<br>ECサイトです。<br>赤ちゃんが可愛く健やかに育つような<br>素敵なグッズを取り揃えています。</p>
+            </div>
+            <div class="top-about__btnArea">
+              <a href="" class="c-btn">商品をみにいく</a>
+            </div>
+            <img src="./assets/about-img2.png" alt="" class="top-about__pic">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
 
   </main>
   <footer clsss="page-inner">
