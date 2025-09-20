@@ -10,49 +10,51 @@
   <script src="./assets/script.js" defer></script>
 </head>
 <body>
-  <header class="page-inner">
-    <div class="header-area">
-      <div class="header-inner">
-        <div class="header-upper">
-          <div class="header-upper__ttlArea">
-            <h2 class="header-upper__title">リキッドマスターズ卒業課題</h2>
+  <header class="header">
+    <div class="page-inner">
+      <div class="header-area">
+        <div class="header-inner">
+          <div class="header-upper">
+            <div class="header-upper__ttlArea">
+              <h2 class="header-upper__title">リキッドマスターズ卒業課題</h2>
+            </div>
+            <nav>
+              <ul class="header-upper__menuArea">
+                <li><a href="" class="header-upper__menu">会社概要</a></li>
+                <li><a href="" class="header-upper__menu">お知らせ</a></li>
+                <li><a href="" class="header-upper__menu">FAQ</a></li>
+                <li><a href="" class="header-upper__menu">日本語</a></li>
+              </ul>
+            </nav>
           </div>
-          <nav>
-            <ul class="header-upper__menuArea">
-              <li><a href="" class="header-upper__menu">会社概要</a></li>
-              <li><a href="" class="header-upper__menu">お知らせ</a></li>
-              <li><a href="" class="header-upper__menu">FAQ</a></li>
-              <li><a href="" class="header-upper__menu">日本語</a></li>
-            </ul>
-          </nav>
+          <div class="header-lower">
+            <button id="js-drawer" class="header-hamburger drawer-icon">
+              <span class="drawer-icon__bar"></span>
+              <span class="drawer-icon__bar"></span>
+              <span class="drawer-icon__bar"></span>
+            </button>
+            <a href="" class="header-lower__logoArea">
+              <h1><img src="./assets/logo.png" alt="logo" class="header-lower__logo"></h1>
+              <h3 class="header-lower__subttl">KAKUUBRAND</h3>
+            </a>
+            <nav class="header-lower__navArea">
+              <ul class="header-lower__menuArea">
+                <li><a href="" class="header-lower__menu">商品一覧</a></li>
+                <li><a href="" class="header-lower__menu">商品カテゴリー</a></li>
+                <li><a href="" class="header-lower__menu">ブランド</a></li>
+                <li><a href="" class="header-lower__menu">お問合せ</a></li>
+              </ul>
+              <ul class="header-lower__manu2Area">
+                <li><img src="./assets/search.png" alt="search" class="header-lower__search"></li>
+                <li><img src="./assets/smile.png" alt="smile" class="header-lower__smile"></li>
+                <li><img src="./assets/heart.png" alt="heart" class="header-lower__heart"></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="header-lower">
-          <button id="js-drawer" class="header-hamburger drawer-icon">
-            <span class="drawer-icon__bar"></span>
-            <span class="drawer-icon__bar"></span>
-            <span class="drawer-icon__bar"></span>
-          </button>
-          <a href="" class="header-lower__logoArea">
-            <h1><img src="./assets/logo.png" alt="logo" class="header-lower__logo"></h1>
-            <h3 class="header-lower__subttl">KAKUUBRAND</h3>
-          </a>
-          <nav class="header-lower__navArea">
-            <ul class="header-lower__menuArea">
-              <li><a href="" class="header-lower__menu">商品一覧</a></li>
-              <li><a href="" class="header-lower__menu">商品カテゴリー</a></li>
-              <li><a href="" class="header-lower__menu">ブランド</a></li>
-              <li><a href="" class="header-lower__menu">お問合せ</a></li>
-            </ul>
-            <ul class="header-lower__manu2Area">
-              <li><img src="./assets/search.png" alt="search" class="header-lower__search"></li>
-              <li><img src="./assets/smile.png" alt="smile" class="header-lower__smile"></li>
-              <li><img src="./assets/heart.png" alt="heart" class="header-lower__heart"></li>
-            </ul>
-          </nav>
+        <div class="header-cartArea">
+          <a href=""><img src="./assets/cart-icon.png" alt="cart-icon" class="header-cart"></a>
         </div>
-      </div>
-      <div class="header-cartArea">
-        <a href=""><img src="./assets/cart-icon.png" alt="cart-icon" class="header-cart"></a>
       </div>
     </div>
   </header>
@@ -94,10 +96,10 @@
     </div>
   </section>
   <section class="top-about">
-    <div class="pageinner content-inner">
+    <div class="page-inner content-inner">
       <div class="top-about__contents">
         <div class="top-about__imgArea">
-          <img src="./assets/about-img1.png" alt="" class="top-about__img">
+          <img src="./assets/about-img1.png" alt="about-img1" class="top-about__img">
         </div>
         <div class="top-about__txtArea">
           <div class="c-ttlArea">
@@ -110,8 +112,83 @@
             <div class="top-about__btnArea">
               <a href="" class="c-btn">商品をみにいく</a>
             </div>
-            <img src="./assets/about-img2.png" alt="" class="top-about__pic">
+            <div class="top-about__bg"></div>
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="brand">
+    <div class="content-inner">
+      <div class="brand-contents">
+        <div class="brand-ttlArea">
+          <div class="c-ttlArea">
+            <h2 class="c-title">BRAND</h2>
+            <p class="c-subTitle">取り扱いブランド</p>
+          </div>
+        </div>
+        <div class="brand-txtArea">
+          <div class="brand-text">
+            <p class="c-text">赤ちゃんも、ママもパパも満足してもらえる<br>とびきりのベビー用品を取り揃えております。<br>ご自宅用にギフトに<br>みんなハッピー</p>
+          </div>
+          <div class="brand-btnArea">
+            <a href="" class="c-btn">ブランド一覧</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ranking">
+    <div class="page-inner content-inner">
+      <div class="ranking-ttlArea">
+        <div class="c-ttlArea">
+          <h2 class="c-title">RANKING</h2>
+          <p class="c-subTitle">人気商品ランキング</p>
+        </div>
+      </div>
+      <ul class="ranking-items">
+        <li class="ranking-item">
+          <a href="">
+            <img src="./assets/ranking-img1.png" alt="ranking1" class="list-img">
+            <span class="label-ranking">1</span>
+            <div class="ranking-textArea">
+              <h3 class="product-name"></h3><span class="option-tag">オススメ</span>白T_XS</h3>
+              <div class="product-price">￥1,000(税込)</div>
+            </div>
+          </a>
+        </li>
+        <li class="ranking-item">
+          <a href="">
+            <img src="./assets/ranking-img2.png" alt="ranking2" class="list-img">
+            <span class="label-ranking">2</span>
+            <div class="ranking-textArea">
+              <h3 class="product-name"></h3><span class="option-tag">オススメ</span>トム</h3>
+              <div class="product-price">￥1,000(税込)</div>
+            </div>
+          </a>
+        </li>
+        <li class="ranking-item">
+          <a href="">
+            <img src="./assets/ranking-img3.png" alt="ranking3" class="list-img">
+            <span class="label-ranking">3</span>
+            <div class="ranking-textArea">
+              <h3 class="product-name"></h3><span class="option-tag">オススメ</span>毛糸の帽子と靴下</h3>
+              <div class="product-price">￥1,000(税込)</div>
+            </div>
+          </a>
+        </li>
+        <li class="ranking-item">
+          <a href="">
+            <img src="./assets/ranking-img4.png" alt="ranking4" class="list-img">
+            <span class="label-ranking">4</span>
+            <div class="ranking-textArea">
+              <h3 class="product-name"></h3><span class="option-tag">オススメ</span>ピンクのきょうりゅう</h3>
+              <div class="product-price">￥1,000(税込)</div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="ranking-btnArea">
+        <a href="" class="c-btn">全てを表示する</a>
       </div>
 
     </div>

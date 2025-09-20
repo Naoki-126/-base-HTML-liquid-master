@@ -53,31 +53,34 @@ body {
 .c-btn {
 	display: inline-block;
 	background: var(--color-primary);
-	padding: 14px 72px;
+	padding: 16px 72px;
 	border: 1px solid var(--color-primary);
 	border-radius: 60px;
 	text-align: center;
 	color: #fff;
+	line-height: 1;
 }
 
 .c-btn__footer {
 	display: inline-block;
 	background: var(--color-primary);
-	padding: 14px 112px;
+	padding: 16px 112px;
 	border: 1px solid var(--color-primary);
 	border-radius: 60px;
 	text-align: center;
 	color: #fff;
+	line-height: 1;
 }
 
 .c-btn__add {
 	display: inline-block;
 	background: var(--bg--secondary);
-	padding: 14px 72px;
+	padding: 16px 72px;
 	border: 1px solid var(--bg--secondary);
 	border-radius: 60px;
 	text-align: center;
 	color: #fff;
+	line-height: 1;
 }
 
 .c-ttlArea {
@@ -109,12 +112,42 @@ body {
 }
 
 .c-text {
-	line-height: 2;
+	line-height: 2.5;
 	letter-spacing: .1em;
 }
 
+.option-tag {
+	display: inline;
+	font-family: 'Inter';
+	font-size: 12px;
+	color: #fff;
+	line-height: 1;
+	letter-spacing: 0;
+	background: #FEAC61;
+}
+
+/* 商品
+=========================== */
+.list-img {
+	width: 100%;
+	max-width: 304px;
+	height: auto;
+}
+
+.product-name,
+.product-price {
+	font-family: 'Inter';
+	color: #1D1D1D ;
+}
+
+
+
 /* Header
 =========================== */
+.header {
+	width: 100%;
+}
+
 .header-area {
 	display: flex;
 	width: 100%;
@@ -326,7 +359,7 @@ body {
 =========================== */
 .top-movie {
 	width: 100%;
-	padding: 160px 0;
+	margin-top: 160px;
 }
 
 .top-movie__videoArea {
@@ -345,13 +378,46 @@ body {
 =========================== */
 .top-about {
 	width: 100%;
-	padding: 160px 0;
+	margin: 160px auto 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.top-about::before,
+.top-about::after {
+	content: "";
+	position: absolute;
+	width: 293px;
+	height: 265px;
+	border-radius: 14px;
+	z-index: -2;
+}
+
+.top-about::before {
+	top: 0;
+	left: -14px;
+	background: var(--bg-primary)
+}
+
+.top-about::after {
+	bottom: 0;
+	right: 260px;
+	background: var(--bg--secondary);
 }
 
 .top-about__contents {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 137px;
 	display: flex;
 	align-items: start;
-	gap: 74px;
+	justify-content: center;
+	gap: 70px;
+}
+
+.top-about__imgArea {
+	width: 50%;
+	text-align: right;
 }
 
 .top-about__img {
@@ -361,22 +427,82 @@ body {
 }
 
 .top-about__txtArea {
-	position: relative;
+	width: 50%;
+	margin-top: 36px;
 }
 
 .top-about-text {
 	margin-top: 70px;
+	max-width: 400px;
 }
 
 .top-about__btnArea {
 	margin-top: 65px;
 }
 
-.top-about__pic {
+.top-about__bg {
 	content: "";
 	position: absolute;
-	top: -200px;
-	right: -500px;
+	background: url(/assets/about-img2.png)no-repeat center center /contain ;
+	top: 6px;
+	right: -100px;
 	width: 460px;
 	height: 448px;
+	z-index: -1;
+}
+
+/* brandセクション
+=========================== */
+.brand {
+	margin: 120px auto 0;
+	width: 100%;
+	max-width: 1920px;
+	background: url(/assets/brand-img.png),var(--bg-primary);
+	background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+	padding: 100px 0;
+}
+
+.brand-contents {
+	width: 100%;
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	gap: 54px;
+}
+
+.brand-btnArea {
+	margin-top: 72px;
+	text-align: right;
+}
+
+/* rankingセクション
+=========================== */
+.ranking {
+	width: 100%;
+	margin-top: 160px;
+}
+
+.ranking-ttlArea {
+	display: block;
+	text-align: center;
+}
+
+.ranking-items {
+	margin: 95px auto 0;
+	width: 100%;
+	max-width: 1420px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(304px, auto));
+	justify-content: center;
+	gap: 53px;
+}
+
+.ranking-item {}
+
+.ranking-btnArea {
+	margin-top: 83px;
+	text-align: center;
+
 }
