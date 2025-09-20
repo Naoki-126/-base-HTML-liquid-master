@@ -84,63 +84,64 @@
     gap: 20px;
   }
 
-  /* top-fv
+  /* fvセクション
   =========================== */
-  .top-fv__img {
+  .fv-img {
     aspect-ratio: 4 / 5;
     min-height: 60vh;
   }
 
-  .top-fv__txtArea {
+  .fv-txtArea {
     top: 42%;
     left: 20%;
   }
 
-  .top-fv__logo {
+  .fv-logo {
     width: 75%;
   }
 
-  .top-fv__text {
+  .fv-text {
     margin-top: 20px;
   }
 
-  /*  top-movie
+  /*  movieセクション
   =========================== */
-  .top-movie {
+  .movie {
     margin-top: 60px;
   }
 
-  /* top-about
+  /* aboutセクション
   =========================== */
-  .top-about {
+  .about {
     margin-top: 60px;
   }
 
-  .top-about::after {
+  .about::after {
     right: -14px;
   }
 
-  .top-about__contents {
+  .about-contents {
+    padding-top: 60px;
     flex-direction: column-reverse;
     gap: 40px;
   }
 
-  .top-about__txtArea {
+  .about-txtArea {
     width: 100%;
     margin-top: 0;
     text-align: center;
   }
 
-  .top-about-text {
+  .about-text {
     margin: 36px auto 0;
     text-align: left;
   }
 
-  .top-about__imgArea {
+  .about-imgArea {
     width: 100%;
   }
 
-  .top-about__bg  {
+  .about-bg  {
     display: none;
   }
 
@@ -164,7 +165,7 @@
   }
 
   .brand-text {
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
     text-align: left;
   }
@@ -172,6 +173,44 @@
   .brand-btnArea {
     text-align: center;
   }
+
+  /* rankingセクション
+  =========================== */
+  .ranking {
+    margin-top: 60px;
+  }
+
+  .ranking-items {
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    gap: 30px 10px;
+  }
+
+  .ranking-btnArea {
+    margin-top: 60px;
+  }
+
+  .label-ranking {
+    top: -18px;
+    left: -19px;
+    width: 37px;
+    height: 35px;
+  }
+
+
+  .label-number {
+    font-size: 18px;
+  }
+
+
+  /*
+  =========================== */
+
+
+
+
+
+
+
 
 
 }
