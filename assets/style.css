@@ -22,6 +22,7 @@ html {
   /* フォント */
   --ff-base:  'Noto Sans JP', 'Inter', sans-serif;
   --ff-en:  "Alata", "Fuzzy Bubbles" , sans-serif;
+	--ff-label: 'Inter', sans-serif;
 
   /* フォントサイズ */
 	--fz-sm:14px;
@@ -119,7 +120,7 @@ body {
 .option-tag {
 	margin-right: 5px;
 	display: inline;
-	font-family: 'Inter';
+	font-family: var(--ff-label);
 	font-size: 12px;
 	color: #fff;
 	line-height: 1;
@@ -130,12 +131,40 @@ body {
 .option-tag__pink {
 	margin-right: 5px;
 	display: inline;
-	font-family: 'Inter';
+	font-family: var(--ff-label);
 	font-size: 12px;
 	color: #fff;
 	line-height: 1;
 	letter-spacing: 0;
 	background: #FF9090;
+}
+
+.label-type {
+	content: "";
+	position: absolute;
+	font-family: var(--ff-label);
+	background: #44BFCF;
+	color: #fff;
+	font-size: 12px;
+	line-height: 1;
+	letter-spacing: 0;
+	padding: 1px 5px;
+	top: 0;
+	right: 0;
+}
+
+.label-typeC {
+	content: "";
+	position: absolute;
+	font-family: var(--ff-label);
+	background: #93CC4B;
+	color: #fff;
+	font-size: 12px;
+	line-height: 1;
+	letter-spacing: 0;
+	padding: 1px 5px;
+	top: 0;
+	right: 0;
 }
 
 /* 商品
@@ -148,7 +177,7 @@ body {
 
 .product-name,
 .product-price {
-	font-family: 'Inter';
+	font-family: var(--ff-label);
 	color: #1D1D1D ;
 }
 
@@ -303,11 +332,10 @@ body {
 	gap: 50px;
 	align-items: center;
 	justify-content: center;
-
 }
 
 .footer-low__content {
-	font-family: 'Inter';
+	font-family: var(--ff-label);
 }
 
 .footer-low__snsArea {
@@ -327,7 +355,7 @@ body {
 	text-align: center;
 }
 
-/* fv
+/* fvセクション
 =========================== */
 .fv {
 	margin: 0 auto;
@@ -548,7 +576,7 @@ body {
 }
 
 .ranking-btnArea {
-	margin-top: 83px;
+	margin-top: 80px;
 	text-align: center;
 }
 
@@ -566,7 +594,7 @@ body {
 }
 
 .new-items {
-	margin-top: 80px;
+	margin: 80px auto 0;
 	width: 100%;
 	max-width: 1470px;
 	display: grid;
@@ -588,15 +616,157 @@ body {
 
 .new-items::before {
 	background: url(/assets/arrow-left.png)no-repeat center center /contain;
-	left: -23px;
+	left: 0px;
 }
 
 .new-items::after {
 	background: url(/assets/arrow-right.png)no-repeat center center /contain;
-	right: -23px;
+	right: 0px;
 }
 
 .new-btnArea {
-	margin-top: 85px;
+	margin-top: 80px;
+	text-align: center;
+}
+
+/* categoryセクション
+=========================== */
+.category {
+	width: 100%;
+	margin-top: 160px;
+}
+
+.new-ttlArea {
+	text-align: center;
+}
+
+.category-contents {
+	margin: 80px auto 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+
+.category-content {
+	position: relative;
+}
+
+.content-img {
+	width: 100%;
+	max-width: 620px;
+	height: auto;
+}
+
+.category-name {
+	content: "";
+	position: absolute;
+	background: #fff;
+	color: #1D1D1D;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: 0;
+	padding: 10px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Blogセクション
+=========================== */
+.blog {
+	width: 100%;
+	margin-top: 160px;
+}
+
+.blog-ttlArea {
+	text-align: center;
+}
+
+.blog-contents {
+	margin: 80px auto 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(304px, auto));
+	align-items: center;
+	justify-content: center;
+	gap: 30px 70px;
+}
+
+.blog-content {
+	position: relative;
+}
+
+.blog-img {
+	width: 100%;
+	max-width: 304px;
+	height: auto;
+}
+
+.blog-excerpt {
+	margin: 16px auto 0;
+	width: 100%;
+	max-width: 290px;
+	line-height: 1.5;
+	letter-spacing: 0;
+	color: #1D1D1D;
+}
+
+.blog-btnArea {
+	margin-top: 80px;
+	text-align: center;
+}
+
+/* infoセクション
+=========================== */
+.info {
+	width: 100%;
+	margin-top: 160px;
+	background: var(--bg--info);
+	padding: 36px 0 67px;
+}
+
+.info-ttlArea {
+	text-align: center;
+}
+
+.info-contents {
+	margin: 80px auto 0;
+}
+
+.info-content {
+	background: var(--bg--info2);
+	padding: 39px 24px;
+}
+
+.info-contentEven {
+	background: var(--bg--info);
+	padding: 39px 24px;
+}
+
+.info-link {
+
+}
+
+.info-article {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 370px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 70px;
+}
+
+.info-date {
+	line-height: 1;
+}
+
+.info-title {
+	line-height: 1;
+}
+
+.info-btnArea {
+	margin-top: 80px;
 	text-align: center;
 }
