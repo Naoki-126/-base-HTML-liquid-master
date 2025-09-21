@@ -1,409 +1,470 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>リキマス最終課題</title>
-  <link rel="stylesheet" href="./assets/reset.css">
-  <link rel="stylesheet" href="./assets/style.css">
-  <link rel="stylesheet" href="./assets/style-sp.css">
-  <script src="./assets/script.js" defer></script>
-</head>
-<body>
-  <header class="header">
-    <div class="page-inner">
-      <div class="header-area">
-        <div class="header-inner">
-          <div class="header-upper">
-            <div class="header-upper__ttlArea">
-              <h2 class="header-upper__title">リキッドマスターズ卒業課題</h2>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リキマス最終課題</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style-sp.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="page-inner">
+        <div class="header-area">
+          <div class="header-inner">
+            <div class="header-upper">
+              <div class="header-upper__ttlArea">
+                <h2 class="header-upper__title">リキッドマスターズ卒業課題</h2>
+              </div>
+              <nav>
+                <ul class="header-upper__menuArea">
+                  <li><a href="" class="header-upper__menu">会社概要</a></li>
+                  <li><a href="" class="header-upper__menu">お知らせ</a></li>
+                  <li><a href="" class="header-upper__menu">FAQ</a></li>
+                  <li><a href="" class="header-upper__menu">日本語</a></li>
+                </ul>
+              </nav>
             </div>
-            <nav>
-              <ul class="header-upper__menuArea">
-                <li><a href="" class="header-upper__menu">会社概要</a></li>
-                <li><a href="" class="header-upper__menu">お知らせ</a></li>
-                <li><a href="" class="header-upper__menu">FAQ</a></li>
-                <li><a href="" class="header-upper__menu">日本語</a></li>
-              </ul>
-            </nav>
+            <div class="header-lower">
+              <button id="js-drawer" class="header-hamburger drawer-icon">
+                <span class="drawer-icon__bar"></span>
+                <span class="drawer-icon__bar"></span>
+                <span class="drawer-icon__bar"></span>
+              </button>
+              <a href="" class="header-lower__logoArea">
+                <h1><img src="./assets/logo.png" alt="logo" class="header-lower__logo"></h1>
+                <h3 class="header-lower__subttl">KAKUUBRAND</h3>
+              </a>
+              <nav class="header-lower__navArea">
+                <ul class="header-lower__menuArea">
+                  <li><a href="" class="header-lower__menu">商品一覧</a></li>
+                  <li><a href="" class="header-lower__menu">商品カテゴリー</a></li>
+                  <li><a href="" class="header-lower__menu">ブランド</a></li>
+                  <li><a href="" class="header-lower__menu">お問合せ</a></li>
+                </ul>
+                <ul class="header-lower__manu2Area">
+                  <li><img src="./assets/search.png" alt="search" class="header-lower__search"></li>
+                  <li><img src="./assets/smile.png" alt="smile" class="header-lower__smile"></li>
+                  <li><img src="./assets/heart.png" alt="heart" class="header-lower__heart"></li>
+                </ul>
+              </nav>
+            </div>
           </div>
-          <div class="header-lower">
-            <button id="js-drawer" class="header-hamburger drawer-icon">
-              <span class="drawer-icon__bar"></span>
-              <span class="drawer-icon__bar"></span>
-              <span class="drawer-icon__bar"></span>
-            </button>
-            <a href="" class="header-lower__logoArea">
-              <h1><img src="./assets/logo.png" alt="logo" class="header-lower__logo"></h1>
-              <h3 class="header-lower__subttl">KAKUUBRAND</h3>
+          <div class="header-cartArea">
+            <a href=""><img src="./assets/cart-icon.png" alt="cart-icon" class="header-cart"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="js-drawer__contents" class="drawer-contents">
+      <nav class="drawer-content">
+        <a href="" class="drawer-content__link">会社概要</a>
+        <a href="" class="drawer-content__link">お知らせ</a>
+        <a href="" class="drawer-content__linkPlus">FAQ</a>
+        <a href="" class="drawer-content__linkPlus">商品一覧</a>
+        <a href="" class="drawer-content__link">商品カテゴリー</a>
+        <a href="" class="drawer-content__link">ブランド</a>
+        <a href="" class="drawer-content__link">お問い合わせ</a>
+        <a href="" class="drawer-content__link">日本語</a>
+        <a href="" class="drawer-content__link"></a>
+        <a href="" class="drawer-content__link"></a>
+        <a href="" class="drawer-content__link"></a>
+      </nav>
+    </div>
+    <main>
+      <section class="fv">
+        <div class="page-inner">
+          <div class="swiper fv-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="fv-area">
+                  <img src="./assets/mv-1.png" alt="mv-1" class="fv-img">
+                  <div class="fv-txtArea">
+                    <h2 class="fv-logoArea"><img src="./assets/logo_kumataro.png" alt="kumataro" class="fv-logo"></h2>
+                    <p class="fv-text">Kumataroも架空ブランドです。<br>話しかけるとお喋りする奇妙な<br>ぬいぐるみです。</p>
+                    <div class="fv-btnArea">
+                      <a href="" class="c-btn">商品をみにいく</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="fv-area">
+                  <img src="./assets/mv-2.png" alt="mv-2" class="fv-img">
+                  <div class="fv-txtArea">
+                    <h2 class="fv-logoArea"><img src="./assets/logo_usa.png" alt="usa" class="fv-logo2"></h2>
+                    <p class="fv-text">USAGIMARUはうさぎモチーフの<br>架空おもちゃブランドです。</p>
+                    <div class="fv-btnArea">
+                      <a href="" class="c-btn">商品をみにいく</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="fv-area">
+                  <img src="./assets/mv-3.png" alt="mv-3" class="fv-img">
+                  <div class="fv-txtArea">
+                    <h2 class="fv-logoArea"><img src="./assets/logo_nemurin.png" alt="nemurin" class="fv-logo3"></h2>
+                    <p class="fv-text">NEMURINも<br>架空のベビー寝具ブランドです。<br>本当にあったらいいな。</p>
+                    <div class="fv-btnArea">
+                      <a href="" class="c-btn">商品をみにいく</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="movie">
+        <div class="page-inner content-inner">
+          <div class="movie-videoArea">
+            <iframe width="1000" height="500"  src="https://www.youtube.com/embed/XXXXXXXX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="movie-video"></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="page-inner content-inner">
+          <div class="about-contents">
+            <div class="about-imgArea">
+              <img src="./assets/about-img1.png" alt="about-img1" class="about-img">
+            </div>
+            <div class="about-txtArea">
+              <div class="c-ttlArea">
+                <h2 class="c-title">ABOUT</h2>
+                <p class="c-subTitle">私たちについて</p>
+              </div>
+                <div class="about-text">
+                  <p class="c-text">BABY PUPO(ベイビープポ)は架空のベビー用品<br>ECサイトです。<br>赤ちゃんが可愛く健やかに育つような<br>素敵なグッズを取り揃えています。</p>
+                </div>
+                <div class="about-btnArea">
+                  <a href="" class="c-btn">商品をみにいく</a>
+                </div>
+                <div class="about-bg"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="brand">
+        <div class="content-inner">
+          <div class="brand-contents">
+            <div class="brand-ttlArea">
+              <div class="c-ttlArea">
+                <h2 class="c-title">BRAND</h2>
+                <p class="c-subTitle">取り扱いブランド</p>
+              </div>
+            </div>
+            <div class="brand-txtArea">
+              <div class="brand-text">
+                <p class="c-text">赤ちゃんも、ママもパパも満足してもらえる<br>とびきりのベビー用品を取り揃えております。<br>ご自宅用にギフトに<br>みんなハッピー</p>
+              </div>
+              <div class="brand-btnArea">
+                <a href="" class="c-btn">ブランド一覧</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ranking">
+        <div class="page-inner content-inner">
+          <div class="ranking-ttlArea">
+            <div class="c-ttlArea">
+              <h2 class="c-title">RANKING</h2>
+              <p class="c-subTitle">人気商品ランキング</p>
+            </div>
+          </div>
+          <ul class="ranking-items">
+            <li class="ranking-item">
+              <a href="">
+                <img src="./assets/ranking-img1.png" alt="ranking1" class="list-img">
+                <div class="label-ranking"><img src="./assets/star1.png" alt="star1" class="star-label">
+                  <span class="label-number">1</span>
+                </div>
+                <div class="ranking-textArea">
+                  <p class="product-name"><span class="option-tag">オススメ</span>白T_XS</p>
+                  <div class="product-price">￥1,000(税込)</div>
+                </div>
+              </a>
+            </li>
+            <li class="ranking-item">
+              <a href="">
+                <img src="./assets/ranking-img2.png" alt="ranking2" class="list-img">
+                <div class="label-ranking"><img src="./assets/star2.png" alt="star2" class="star-label">
+                  <span class="label-number">2</span>
+                </div>
+                <div class="ranking-textArea">
+                  <h3 class="product-name"></h3><span class="option-tag">オススメ</span>トム</h3>
+                  <div class="product-price">￥1,000(税込)</div>
+                </div>
+              </a>
+            </li>
+            <li class="ranking-item">
+              <a href="">
+                <img src="./assets/ranking-img3.png" alt="ranking3" class="list-img">
+                <div class="label-ranking"><img src="./assets/star3.png" alt="star3" class="star-label">
+                  <span class="label-number">3</span>
+                </div>
+                <div class="ranking-textArea">
+                  <h3 class="product-name"></h3><span class="option-tag">オススメ</span>毛糸の帽子と靴下</h3>
+                  <div class="product-price">￥1,000(税込)</div>
+                </div>
+              </a>
+            </li>
+            <li class="ranking-item">
+              <a href="">
+                <img src="./assets/ranking-img4.png" alt="ranking4" class="list-img">
+                <div class="label-ranking"><img src="./assets/star4.png" alt="star4" class="star-label">
+                  <span class="label-number">4</span>
+                </div>
+                <div class="ranking-textArea">
+                  <h3 class="product-name"></h3><span class="option-tag">オススメ</span>ピンクのきょうりゅう</h3>
+                  <div class="product-price">￥1,000(税込)</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="ranking-btnArea">
+            <a href="" class="c-btn">全てを表示する</a>
+          </div>
+        </div>
+      </section>
+      <section class="new">
+        <div class="content-inner">
+          <div class="new-ttlArea">
+            <div class="c-ttlArea">
+              <h2 class="c-title">NEW ITEM</h2>
+              <p class="c-subTitle">新商品</p>
+            </div>
+          </div>
+          <ul class="new-items">
+            <li class="new-item"><a href=""><img src="./assets/hiyoko.png" alt="hiyokoo" class="list-img">
+              <div class="ranking-textArea">
+                  <h3 class="product-name"></h3><span class="option-tag__pink">NEW</span>お風呂のひよこ</h3>
+                  <div class="product-price">￥1,000(税込)</div>
+                </div>
+              </a>
+            </li>
+            <li class="new-item"><a href=""><img src="./assets/eric.png" alt="eric" class="list-img">
+              <div class="ranking-textArea">
+                  <h3 class="product-name"></h3><span class="option-tag__pink">NEW</span>エリック&スタンリー</h3>
+                  <div class="product-price">￥1,000(税込)</div>
+                </div>
+              </a>
+            </li>
+            <li class="new-item"><a href=""><img src="./assets/birthday.png" alt="birthday" class="list-img">
+              <div class="ranking-textArea">
+                  <h3 class="product-name"></h3><span class="option-tag__pink">NEW</span>バースデーセット(女の子)</h3>
+                  <div class="product-price">￥1,000(税込)</div>
+                </div>
+              </a>
+            </li>
+            <li class="new-item"><a href=""><img src="./assets/block.png" alt="block" class="list-img">
+              <div class="ranking-textArea">
+                  <h3 class="product-name"></h3><span class="option-tag__pink">NEW</span>ブロック</h3>
+                  <div class="product-price">￥1,000(税込)</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="new-btnArea">
+            <a href="" class="c-btn">全てを表示する</a>
+          </div>
+        </div>
+      </section>
+      <section class="category">
+        <div class="page-inner content-inner">
+          <div class="new-ttlArea">
+            <div class="c-ttlArea">
+              <h2 class="c-title">CATEGORY</h2>
+              <p class="c-subTitle">商品カテゴリー</p>
+            </div>
+          </div>
+          <ul class="category-contents">
+            <li class="category-content"><a href=""><img src="./assets/category-img1.png" alt="category-img1" class="content-img"><span class="category-name">ぬいぐるみ</span></a></li>
+            <li class="category-content"><a href=""><img src="./assets/category-img2.png" alt="category-img2" class="content-img"><span class="category-name">ベビー服・スタイ</span></a></li>
+            <li class="category-content"><a href=""><img src="./assets/category-img3.png" alt="category-img3" class="content-img"><span class="category-name">ベビー寝具</span></a></li>
+            <li class="category-content"><a href=""><img src="./assets/category-img4.png" alt="category-img4" class="content-img"><span class="category-name">オムツカバー</span></a></li>
+            <li class="category-content"><a href=""><img src="./assets/category-img5.png" alt="category-img5" class="content-img"><span class="category-name">ランドリーグッズ</span></a></li>
+            <li class="category-content"><a href=""><img src="./assets/category-img6.png" alt="category-img6" class="content-img"><span class="category-name">お風呂グッズ</span></a></li>
+            <li class="category-content"><a href=""><img src="./assets/category-img7.png" alt="category-img7" class="content-img"><span class="category-name">お菓子</span></a></li>
+            <li class="category-content"><a href=""><img src="./assets/category-img8.png" alt="category-img8" class="content-img"><span class="category-name">食器</span></a></li>
+            <li class="category-content"><a href=""><img src="./assets/category-img9.png" alt="category-img9" class="content-img"><span class="category-name">ギフト</span></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="page-inner content-inner">
+          <div class="blog-ttlArea">
+            <div class="c-ttlArea">
+              <h2 class="c-title">BLOG</h2>
+              <p class="c-subTitle">ブログ</p>
+            </div>
+          </div>
+          <ul class="blog-contents">
+            <li class="blog-content">
+              <a href="">
+                <img src="./assets/blog-img1.png" alt="blog-img1" class="blog-img">
+                  <p class="blog-excerpt">子どものごっこ遊びは社会性の基礎を養う大切な遊びなのをご存知でしょうか…</p>
+                  <div class="label-type">お知らせ</div>
+              </a>
+            </li>
+            <li class="blog-content">
+              <a href="">
+                <img src="./assets/blog-img2.png" alt="blog-img2" class="blog-img">
+                  <p class="blog-excerpt">子どもの頃に大切にしていたぬいぐるみが突然無くなった経験てありませんか…</p>
+                  <div class="label-type">お知らせ</div>
+              </a>
+            </li>
+            <li class="blog-content">
+              <a href="">
+                <img src="./assets/blog-img3.png" alt="blog-img3" class="blog-img">
+                  <p class="blog-excerpt">赤ちゃんのおもちゃってとっても可愛いですよね！色使いもカラフルでワクワ…</p>
+                  <div class="label-typeC">コラム</div>
+              </a>
+            </li>
+          </ul>
+          <div class="blog-btnArea">
+            <a href="" class="c-btn">ブログ一覧</a>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="info-ttlArea">
+          <div class="c-ttlArea">
+            <h2 class="c-title">INFORMATION</h2>
+            <p class="c-subTitle">インフォメーション</p>
+          </div>
+        </div>
+        <ul class="info-contents">
+          <li class="info-content">
+            <a href="" class="info-link">
+              <div class="info-article">
+                <div class="info-date">20xx,xx,xx</div>
+                <div class="info-title">新しい商品入荷しました!</div>
+              </div>
             </a>
-            <nav class="header-lower__navArea">
-              <ul class="header-lower__menuArea">
-                <li><a href="" class="header-lower__menu">商品一覧</a></li>
-                <li><a href="" class="header-lower__menu">商品カテゴリー</a></li>
-                <li><a href="" class="header-lower__menu">ブランド</a></li>
-                <li><a href="" class="header-lower__menu">お問合せ</a></li>
-              </ul>
-              <ul class="header-lower__manu2Area">
-                <li><img src="./assets/search.png" alt="search" class="header-lower__search"></li>
-                <li><img src="./assets/smile.png" alt="smile" class="header-lower__smile"></li>
-                <li><img src="./assets/heart.png" alt="heart" class="header-lower__heart"></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="header-cartArea">
-          <a href=""><img src="./assets/cart-icon.png" alt="cart-icon" class="header-cart"></a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div id="js-drawer__contents" class="drawer-contents">
-    <nav class="drawer-content">
-      <a href="" class="drawer-content__link">会社概要</a>
-      <a href="" class="drawer-content__link">お知らせ</a>
-      <a href="" class="drawer-content__linkPlus">FAQ</a>
-      <a href="" class="drawer-content__linkPlus">商品一覧</a>
-      <a href="" class="drawer-content__link">商品カテゴリー</a>
-      <a href="" class="drawer-content__link">ブランド</a>
-      <a href="" class="drawer-content__link">お問い合わせ</a>
-      <a href="" class="drawer-content__link">日本語</a>
-      <a href="" class="drawer-content__link"></a>
-      <a href="" class="drawer-content__link"></a>
-      <a href="" class="drawer-content__link"></a>
-    </nav>
-  </div>
-  <main>
-  <section class="fv">
-    <div class="page-inner">
-      <div class="fv-area">
-        <img src="./assets/mv-1.png" alt="mv-1" class="fv-img">
-        <div class="fv-txtArea">
-          <h2 class="fv-logoArea"><img src="./assets/logo_kumataro.png" alt="kumataro" class="fv-logo"></h2>
-          <p class="fv-text">Kumataroも架空ブランドです。<br>話しかけるとお喋りする奇妙な<br>ぬいぐるみです。</p>
-          <div class="fv-btnArea">
-            <a href="" class="c-btn">商品をみにいく</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="movie">
-    <div class="page-inner content-inner">
-      <div class="movie-videoArea">
-        <iframe width="1000" height="500"  src="https://www.youtube.com/embed/XXXXXXXX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="movie-video"></iframe>
-      </div>
-    </div>
-  </section>
-  <section class="about">
-    <div class="page-inner content-inner">
-      <div class="about-contents">
-        <div class="about-imgArea">
-          <img src="./assets/about-img1.png" alt="about-img1" class="about-img">
-        </div>
-        <div class="about-txtArea">
-          <div class="c-ttlArea">
-            <h2 class="c-title">ABOUT</h2>
-            <p class="c-subTitle">私たちについて</p>
-          </div>
-            <div class="about-text">
-              <p class="c-text">BABY PUPO(ベイビープポ)は架空のベビー用品<br>ECサイトです。<br>赤ちゃんが可愛く健やかに育つような<br>素敵なグッズを取り揃えています。</p>
-            </div>
-            <div class="about-btnArea">
-              <a href="" class="c-btn">商品をみにいく</a>
-            </div>
-            <div class="about-bg"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="brand">
-    <div class="content-inner">
-      <div class="brand-contents">
-        <div class="brand-ttlArea">
-          <div class="c-ttlArea">
-            <h2 class="c-title">BRAND</h2>
-            <p class="c-subTitle">取り扱いブランド</p>
-          </div>
-        </div>
-        <div class="brand-txtArea">
-          <div class="brand-text">
-            <p class="c-text">赤ちゃんも、ママもパパも満足してもらえる<br>とびきりのベビー用品を取り揃えております。<br>ご自宅用にギフトに<br>みんなハッピー</p>
-          </div>
-          <div class="brand-btnArea">
-            <a href="" class="c-btn">ブランド一覧</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="ranking">
-    <div class="page-inner content-inner">
-      <div class="ranking-ttlArea">
-        <div class="c-ttlArea">
-          <h2 class="c-title">RANKING</h2>
-          <p class="c-subTitle">人気商品ランキング</p>
-        </div>
-      </div>
-      <ul class="ranking-items">
-        <li class="ranking-item">
-          <a href="">
-            <img src="./assets/ranking-img1.png" alt="ranking1" class="list-img">
-            <div class="label-ranking"><img src="./assets/star1.png" alt="star1" class="star-label">
-              <span class="label-number">1</span>
-            </div>
-            <div class="ranking-textArea">
-              <p class="product-name"><span class="option-tag">オススメ</span>白T_XS</p>
-              <div class="product-price">￥1,000(税込)</div>
-            </div>
-          </a>
-        </li>
-        <li class="ranking-item">
-          <a href="">
-            <img src="./assets/ranking-img2.png" alt="ranking2" class="list-img">
-            <div class="label-ranking"><img src="./assets/star2.png" alt="star2" class="star-label">
-              <span class="label-number">2</span>
-            </div>
-            <div class="ranking-textArea">
-              <h3 class="product-name"></h3><span class="option-tag">オススメ</span>トム</h3>
-              <div class="product-price">￥1,000(税込)</div>
-            </div>
-          </a>
-        </li>
-        <li class="ranking-item">
-          <a href="">
-            <img src="./assets/ranking-img3.png" alt="ranking3" class="list-img">
-            <div class="label-ranking"><img src="./assets/star3.png" alt="star3" class="star-label">
-              <span class="label-number">3</span>
-            </div>
-            <div class="ranking-textArea">
-              <h3 class="product-name"></h3><span class="option-tag">オススメ</span>毛糸の帽子と靴下</h3>
-              <div class="product-price">￥1,000(税込)</div>
-            </div>
-          </a>
-        </li>
-        <li class="ranking-item">
-          <a href="">
-            <img src="./assets/ranking-img4.png" alt="ranking4" class="list-img">
-            <div class="label-ranking"><img src="./assets/star4.png" alt="star4" class="star-label">
-              <span class="label-number">4</span>
-            </div>
-            <div class="ranking-textArea">
-              <h3 class="product-name"></h3><span class="option-tag">オススメ</span>ピンクのきょうりゅう</h3>
-              <div class="product-price">￥1,000(税込)</div>
-            </div>
-          </a>
-        </li>
-      </ul>
-      <div class="ranking-btnArea">
-        <a href="" class="c-btn">全てを表示する</a>
-      </div>
-    </div>
-  </section>
-  <section class="new">
-    <div class="content-inner">
-      <div class="new-ttlArea">
-        <div class="c-ttlArea">
-          <h2 class="c-title">NEW ITEM</h2>
-          <p class="c-subTitle">新商品</p>
-        </div>
-      </div>
-      <ul class="new-items">
-        <li class="new-item"><a href=""><img src="./assets/hiyoko.png" alt="hiyokoo" class="list-img">
-          <div class="ranking-textArea">
-              <h3 class="product-name"></h3><span class="option-tag__pink">NEW</span>お風呂のひよこ</h3>
-              <div class="product-price">￥1,000(税込)</div>
-            </div>
-          </a>
-        </li>
-        <li class="new-item"><a href=""><img src="./assets/eric.png" alt="eric" class="list-img">
-          <div class="ranking-textArea">
-              <h3 class="product-name"></h3><span class="option-tag__pink">NEW</span>エリック&スタンリー</h3>
-              <div class="product-price">￥1,000(税込)</div>
-            </div>
-          </a>
-        </li>
-        <li class="new-item"><a href=""><img src="./assets/birthday.png" alt="birthday" class="list-img">
-          <div class="ranking-textArea">
-              <h3 class="product-name"></h3><span class="option-tag__pink">NEW</span>バースデーセット(女の子)</h3>
-              <div class="product-price">￥1,000(税込)</div>
-            </div>
-          </a>
-        </li>
-        <li class="new-item"><a href=""><img src="./assets/block.png" alt="block" class="list-img">
-          <div class="ranking-textArea">
-              <h3 class="product-name"></h3><span class="option-tag__pink">NEW</span>ブロック</h3>
-              <div class="product-price">￥1,000(税込)</div>
-            </div>
-          </a>
-        </li>
-      </ul>
-      <div class="new-btnArea">
-        <a href="" class="c-btn">全てを表示する</a>
-      </div>
-    </div>
-  </section>
-  <section class="category">
-    <div class="page-inner content-inner">
-      <div class="new-ttlArea">
-        <div class="c-ttlArea">
-          <h2 class="c-title">CATEGORY</h2>
-          <p class="c-subTitle">商品カテゴリー</p>
-        </div>
-      </div>
-      <ul class="category-contents">
-        <li class="category-content"><a href=""><img src="./assets/category-img1.png" alt="category-img1" class="content-img"><span class="category-name">ぬいぐるみ</span></a></li>
-        <li class="category-content"><a href=""><img src="./assets/category-img2.png" alt="category-img2" class="content-img"><span class="category-name">ベビー服・スタイ</span></a></li>
-        <li class="category-content"><a href=""><img src="./assets/category-img3.png" alt="category-img3" class="content-img"><span class="category-name">ベビー寝具</span></a></li>
-        <li class="category-content"><a href=""><img src="./assets/category-img4.png" alt="category-img4" class="content-img"><span class="category-name">オムツカバー</span></a></li>
-        <li class="category-content"><a href=""><img src="./assets/category-img5.png" alt="category-img5" class="content-img"><span class="category-name">ランドリーグッズ</span></a></li>
-        <li class="category-content"><a href=""><img src="./assets/category-img6.png" alt="category-img6" class="content-img"><span class="category-name">お風呂グッズ</span></a></li>
-        <li class="category-content"><a href=""><img src="./assets/category-img7.png" alt="category-img7" class="content-img"><span class="category-name">お菓子</span></a></li>
-        <li class="category-content"><a href=""><img src="./assets/category-img8.png" alt="category-img8" class="content-img"><span class="category-name">食器</span></a></li>
-        <li class="category-content"><a href=""><img src="./assets/category-img9.png" alt="category-img9" class="content-img"><span class="category-name">ギフト</span></a></li>
-      </ul>
-    </div>
-  </section>
-  <section class="blog">
-    <div class="page-inner content-inner">
-      <div class="blog-ttlArea">
-        <div class="c-ttlArea">
-          <h2 class="c-title">BLOG</h2>
-          <p class="c-subTitle">ブログ</p>
-        </div>
-      </div>
-      <ul class="blog-contents">
-        <li class="blog-content">
-          <a href="">
-            <img src="./assets/blog-img1.png" alt="blog-img1" class="blog-img">
-              <p class="blog-excerpt">子どものごっこ遊びは社会性の基礎を養う大切な遊びなのをご存知でしょうか…</p>
-              <div class="label-type">お知らせ</div>
-          </a>
-        </li>
-        <li class="blog-content">
-          <a href="">
-            <img src="./assets/blog-img2.png" alt="blog-img2" class="blog-img">
-              <p class="blog-excerpt">子どもの頃に大切にしていたぬいぐるみが突然無くなった経験てありませんか…</p>
-              <div class="label-type">お知らせ</div>
-          </a>
-        </li>
-        <li class="blog-content">
-          <a href="">
-            <img src="./assets/blog-img3.png" alt="blog-img3" class="blog-img">
-              <p class="blog-excerpt">赤ちゃんのおもちゃってとっても可愛いですよね！色使いもカラフルでワクワ…</p>
-              <div class="label-typeC">コラム</div>
-          </a>
-        </li>
-      </ul>
-      <div class="blog-btnArea">
-        <a href="" class="c-btn">ブログ一覧</a>
-      </div>
-    </div>
-  </section>
-  <section class="info">
-
-      <div class="info-ttlArea">
-        <div class="c-ttlArea">
-          <h2 class="c-title">INFORMATION</h2>
-          <p class="c-subTitle">インフォメーション</p>
-        </div>
-      </div>
-      <ul class="info-contents">
-        <li class="info-content">
-          <a href="" class="info-link">
-            <div class="info-article">
-              <div class="info-date">20xx,xx,xx</div>
-              <div class="info-title">新しい商品入荷しました!</div>
-            </div>
-          </a>
-        </li>
-        <li class="info-contentEven">
-          <a href="" class="info-link">
-            <div class="info-article">
-              <div class="info-date">20xx,xx,xx</div>
-              <div class="info-title">新しい商品入荷しました!</div>
-            </div>
-          </a>
-        </li>
-        <li class="info-content">
-          <a href="" class="info-link">
-            <div class="info-article">
-              <div class="info-date">20xx,xx,xx</div>
-              <div class="info-title">新しい商品入荷しました!</div>
-            </div>
-          </a>
-        </li>
-
-      </ul>
-      <div class="info-btnArea">
-        <a href="" class="c-btn">お知らせ一覧</a>
-      </div>
-
-  </section>
-
-
-
-
-
-
-
-
-
-
-
-  </main>
-  <footer clsss="page-inner">
-    <div class="footer-inner">
-      <div class="footer-up">
-        <div class="footer-up__logoArea">
-          <h1><a href=""><img src="./assets/logo.png" alt="logo" class="footer-logo"></a></h1>
-          <p class="footer-sub">KAKUUBRAND</p>
-          <div class="footer-up__wrap">
-            <div class="footer-name">株式会社リキッドマスターズ<br>〒111-1234<br>第3新東京市1234-5<br>TEL：0120-123-456<br>営業時間：平日10：00〜17：00<br>定休日：土日祝</div>
-            <nav>
-              <ul class="footer-menus">
-                <li><a href="" class="footer-menu">商品一覧</a></li>
-                <li><a href="" class="footer-menu">商品カテゴリー</a></li>
-                <li><a href="" class="footer-menu">ブランド</a></li>
-                <li><a href="" class="footer-menu">お問合せ</a></li>
-              </ul>
-            </nav>
-            <nav>
-              <ul class="footer-info">
-                <li><a href="" class="footer-page">会社概要</a></li>
-                <li><a href="" class="footer-page">お知らせ</a></li>
-                <li><a href="" class="footer-page">FAQ</a></li>
-              </ul>
-            </nav>
-            <div class="footer-contact">
-              <div class="footer-btnArea">
-                <a href="" class="c-btn__footer">お問い合わせ</a>
+          </li>
+          <li class="info-contentEven">
+            <a href="" class="info-link">
+              <div class="info-article">
+                <div class="info-date">20xx,xx,xx</div>
+                <div class="info-title">新しい商品入荷しました!</div>
               </div>
-              <p class="footer-content__text">メルマガ登録で最新情報をお届け</p>
-              <div class="footer-addressArea">
-                <a href="" class="c-btn__add">メールアドレス入力　→</a>
+            </a>
+          </li>
+          <li class="info-content">
+            <a href="" class="info-link">
+              <div class="info-article">
+                <div class="info-date">20xx,xx,xx</div>
+                <div class="info-title">新しい商品入荷しました!</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="info-btnArea">
+          <a href="" class="c-btn">お知らせ一覧</a>
+        </div>
+      </section>
+      <section class="insta">
+        <div class="page-inner content-inner">
+          <div class="insta-ttlArea">
+            <div class="c-ttlArea">
+              <h2 class="c-title">INSTAGRAM</h2>
+              <p class="c-subTitle">@instagram_123</p>
+            </div>
+          </div>
+          <ul class="insta-contents">
+            <li class="insta-content">
+              <a href=""><img src="./assets/insta-img1.png" alt="insta-img1" class="insta-img"></a>
+            </li>
+            <li class="insta-content">
+              <a href=""><img src="./assets/insta-img2.png" alt="insta-img2" class="insta-img"></a>
+            </li>
+            <li class="insta-content">
+              <a href=""><img src="./assets/insta-img3.png" alt="insta-img3" class="insta-img"></a>
+            </li>
+            <li class="insta-content">
+              <a href=""><img src="./assets/insta-img4.png" alt="insta-img4" class="insta-img"></a>
+            </li>
+            <li class="insta-content">
+              <a href=""><img src="./assets/insta-img5.png" alt="insta-img5" class="insta-img"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="register">
+        <div class="content-inner">
+          <div class="register-ttlArea">
+            <div class="c-ttlArea">
+              <h2 class="c-title">CORPORATE<br>CASTOMER</h2>
+              <p class="c-subTitle">卸売用新規登録</p>
+            </div>
+          </div>
+          <div class="register-contents">
+            <p class="register-content">法人様向けの製品もお取り扱いしております<br>新規ご登録お待ちしております。</p>
+          </div>
+          <div class="register-btnArea">
+            <a href="" class="c-btn">ご登録はこちらから</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer clsss="page-inner">
+      <div class="footer-inner">
+        <div class="footer-up">
+          <div class="footer-up__logoArea">
+            <h1><a href=""><img src="./assets/logo.png" alt="logo" class="footer-logo"></a></h1>
+            <p class="footer-sub">KAKUUBRAND</p>
+            <div class="footer-up__wrap">
+              <div class="footer-name">株式会社リキッドマスターズ<br>〒111-1234<br>第3新東京市1234-5<br>TEL：0120-123-456<br>営業時間：平日10：00〜17：00<br>定休日：土日祝</div>
+              <nav>
+                <ul class="footer-menus">
+                  <li><a href="" class="footer-menu">商品一覧</a></li>
+                  <li><a href="" class="footer-menu">商品カテゴリー</a></li>
+                  <li><a href="" class="footer-menu">ブランド</a></li>
+                  <li><a href="" class="footer-menu">お問合せ</a></li>
+                </ul>
+              </nav>
+              <nav>
+                <ul class="footer-info">
+                  <li><a href="" class="footer-page">会社概要</a></li>
+                  <li><a href="" class="footer-page">お知らせ</a></li>
+                  <li><a href="" class="footer-page">FAQ</a></li>
+                </ul>
+              </nav>
+              <div class="footer-contact">
+                <div class="footer-btnArea">
+                  <a href="" class="c-btn__footer">お問い合わせ</a>
+                </div>
+                <p class="footer-content__text">メルマガ登録で最新情報をお届け</p>
+                <div class="footer-addressArea">
+                  <a href="" class="c-btn__add">メールアドレス入力　→</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="footer-low">
+          <nav>
+            <ul class="footer-low__wrap">
+              <li><a href="" class="footer-low__content">プライバシーポリシー</a></li>
+              <li><a href="" class="footer-low__content">特定商取引法に基づく表記</a></li>
+              <li><a href="" class="footer-low__content">利用規約</a></li>
+            </ul>
+            <ul class="footer-low__snsArea">
+              <li><a href=""><img src="./assets/facebook.png" alt="facebook" class="footer-sns" width="12"></a></li>
+              <li><a href=""><img src="./assets/twitter-bird.png" alt="twitter" class="footer-sns" width="25"></a></li>
+              <li><a href=""><img src="./assets/instagram.png" alt="instagram" class="footer-sns" width="21"></a></li>
+              <li><a href=""><img src="./assets/youtube-play.png" alt="youtube-play" class="footer-sns" width="25"></a></li>
+            </ul>
+          </nav>
+          <p class="footer-copyright">@2023 BABYPUPO</p>
+        </div>
       </div>
-      <div class="footer-low">
-        <nav>
-          <ul class="footer-low__wrap">
-            <li><a href="" class="footer-low__content">プライバシーポリシー</a></li>
-            <li><a href="" class="footer-low__content">特定商取引法に基づく表記</a></li>
-            <li><a href="" class="footer-low__content">利用規約</a></li>
-          </ul>
-          <ul class="footer-low__snsArea">
-            <li><a href=""><img src="./assets/facebook.png" alt="facebook" class="footer-sns" width="12"></a></li>
-            <li><a href=""><img src="./assets/twitter-bird.png" alt="twitter" class="footer-sns" width="25"></a></li>
-            <li><a href=""><img src="./assets/instagram.png" alt="instagram" class="footer-sns" width="21"></a></li>
-            <li><a href=""><img src="./assets/youtube-play.png" alt="youtube-play" class="footer-sns" width="25"></a></li>
-          </ul>
-        </nav>
-        <p class="footer-copyright">@2023 BABYPUPO</p>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>

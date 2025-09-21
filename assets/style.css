@@ -382,15 +382,35 @@ body {
 	left: 20%;
 }
 
+.fv-logoArea {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 .fv-logo {
 	width: 100%;
 	max-width: 274px;
 	height: auto;
 }
 
+.fv-logo2 {
+	width: 100%;
+	max-width: 187px;
+	height: auto;
+}
+
+.fv-logo3 {
+	width: 100%;
+	max-width: 123px;
+	height: auto;
+}
+
 .fv-text {
 	margin-top: 26px;
-
+	line-height: 2;
+	text-align: center;
 }
 
 .fv-btnArea {
@@ -744,10 +764,6 @@ body {
 	padding: 39px 24px;
 }
 
-.info-link {
-
-}
-
 .info-article {
 	margin: 0 auto;
 	width: 100%;
@@ -768,5 +784,60 @@ body {
 
 .info-btnArea {
 	margin-top: 80px;
+	text-align: center;
+}
+
+/* instaセクション
+=========================== */
+.insta {
+	width: 100%;
+	margin-top: 160px;
+}
+
+.insta-ttlArea {
+	text-align: center;
+}
+
+.insta-contents {
+	margin: 80px auto 0;
+	width: 100%;
+	max-width: 1100px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+	gap: 25px;
+	align-items: center;
+	justify-content: center;
+}
+
+.insta-content {
+	width: 100%;
+}
+
+.insta-img {
+	width: 100%;
+	max-width: 180px;
+	height: auto;
+}
+
+/* registerセクション
+=========================== */
+.register {
+	width: 100%;
+	margin-top: 160px;
+	padding: 80px 0;
+	background: url(/assets/banner-img.png)no-repeat center center /cover;
+}
+
+.register-ttlArea {
+	text-align: center;
+}
+
+.register-contents {
+	margin: 46px auto 0;
+	text-align: center;
+}
+
+.register-btnArea {
+	margin-top: 30px;
 	text-align: center;
 }

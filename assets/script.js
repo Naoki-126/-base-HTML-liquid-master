@@ -10,3 +10,23 @@ drawerBtn.addEventListener("click",function (e) {
   drawerBtn.classList.toggle("is-checked");
   drawerContents.classList.toggle("is-checked");
 });
+
+/* スワイパー
+=========================== */
+const swiper = new Swiper(".swiper", {
+    loop: true,
+    effect: "fade",
+    speed: 1000,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
